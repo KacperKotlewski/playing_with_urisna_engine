@@ -7,6 +7,9 @@ To run entity test type using console:
 cd game_engine2
 python test.py <count>
 ```
-`<count> is count of total entities by default 64`
+`where <count> is count of total entities by default 64`
+
+example:
+`python test.py 256`
 
 you can move player on **wsad**
