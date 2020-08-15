@@ -33,8 +33,6 @@ def generate_entities(args):
     return ent
 
 tick_counter = time.Tick(100)
-dt1 = time.Deltatime()
-dt2 = time.Deltatime()
 
 def update_example():
     try:
@@ -46,11 +44,6 @@ def update_example():
         pass
     if tick_counter():
         move(entites())
-        print("dt1:", dt1.Get())
-        print("dt2:", dt2.Get())
-        dt2()
-
-    dt1()
 
 
 if __name__ == "__main__":
