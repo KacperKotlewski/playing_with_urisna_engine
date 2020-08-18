@@ -1,0 +1,1 @@
+from .setup_uv_map import UV_MAP

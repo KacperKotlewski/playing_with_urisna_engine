@@ -9,26 +9,27 @@ def move(entities):
         ent.y += (randrange(-1, 2)) * .1
 
 
-
 entites = Entity_List()
-entites.Add_New(
-    "player",
-    model = 'cube' ,
-    color = color.orange,
-    scale_y = 2,
-)
-for i in range(200):
-    particles = Entity(
+def create_entities():
+    entites.Add_New(
+        parent="scene",
+        "player",
         model = 'cube' ,
         color = color.orange,
-        scale = 0.1,
-        world_x= (random()*10-5),
-        world_y= (random()*10-5)
+        scale_y = 2,
+        world_position= (120,0,0),
     )
-    entites.Add_Exist(particles, "paricles"+str(i))
-print("Count", entites.Count())
+    for i in range(200):
+        particles = Entity(
+            parent="scene",
+            model = 'cube' ,
+            color = color.orange,
+            scale = 0.1,
+        )
+        particles.set_position(((randrange(-200,200,1)),((randrange(-200,200,1)),0)
+        print(f'{i} : {0}'.format(entites.Add_Exist(particles, "paricles"+str(i))))
+    print("Count", entites.Count())
 
-app = Ursina()
 
 
 def update():                  # update gets automatically called by the engine.
@@ -41,3 +42,10 @@ def update():                  # update gets automatically called by the engine.
         pass
     print(entites())
     print(entites("player"))
+
+
+if __name__ == '__main__':
+    app = Ursina()
+    create_entities()
+    app.run()
+

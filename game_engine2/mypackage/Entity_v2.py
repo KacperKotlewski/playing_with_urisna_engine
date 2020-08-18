@@ -1,5 +1,8 @@
 from ursina import *
 class Entity(Entity):
+    def __init__(self, add_to_scene_entities=True, **kwargs):
+        super().__init__(add_to_scene_entities=add_to_scene_entities, **kwargs)
+
     def copy(self):
         return self.__copy__()
 

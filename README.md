@@ -25,8 +25,16 @@ playing_with_urisna_engine is repo to learn and have fun with exploring ursina e
 >## Minecraft chunk creator test
 >>To run Minecraft chunk creator test type into console:
 >>```
->>cd mc
->>python mc/mc.py
+>>python mc/one_file
 >>```
+>>or
+>>```
+>>python mc/separated
+>>```
+>>## Note:
+>>
+>>second one is separated to many **.py** files, in one_file you have only one file with **111** lines of code and comments
+>>
+>>second one also use threads to generate chunks
 >
 >you can move player on **wsad**
