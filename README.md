@@ -10,7 +10,8 @@ playing_with_urisna_engine is repo to learn and have fun with exploring ursina e
 >after that you can choose what you want to run
 
 ------
->## Entity test
+>## Entity test 
+> **!!! need to be repaird !!!**
 >>To run entity test type into console:
 >>```
 >>python game_engine2/test.py <count>
